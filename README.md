@@ -13,3 +13,9 @@ Notes
 
 Only works on systems using NetworkManager (n-m has to be present)
 
+Dependencies
+============
+
+```bash
+apt-get install python-networkmanager
+```

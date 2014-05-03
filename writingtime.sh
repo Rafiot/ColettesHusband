@@ -1,5 +1,16 @@
 #!/bin/bash
 
+which n-m &>/dev/null
+if [ ! $? -eq 0 ]; then
+    echo -e "n-m command not found. Please install python-networkmanager:\n\tsudo apt-get install python-networkmanager"
+    exit 1
+fi
+
+if [ $# -eq 0 ]; then
+    echo "Usage: ./writingtime.sh <MINUTES>"
+    exit 1
+fi
+
 off_time=${1}
 
 start_date=`date`
