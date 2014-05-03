@@ -11,11 +11,13 @@ Usage
 Notes
 =====
 
-Only works on systems using NetworkManager (n-m has to be present)
+Only works on systems using NetworkManager, with n-m installed.
+In other words, it should work on all the Ubuntu systems but has only be tested
+on Kubuntu 14.04.
 
 Dependencies
 ============
 
 ```bash
-apt-get install python-networkmanager
+sudo apt-get install python-networkmanager
 ```
